@@ -48,12 +48,12 @@ La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente 
 
 https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]
 
-**Remitido por:** NCBI (GEO)
-**Estudio:** rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno
-**Muestra:** MPs200vm.3
+**Remitido por:** NCBI (GEO)  
+**Estudio:** rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno  
+**Muestra:** MPs200vm.3  
 - Organismo: Danio rerio
-
-**Librería:**
+  
+**Librería:**  
 - Instrumento: Ion S5 XL
 - Estrategia: OTRO
 - Fuente: GENOMICA
