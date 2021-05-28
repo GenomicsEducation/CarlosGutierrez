@@ -15,10 +15,10 @@ _A completar dependiendo de los datos seleccionados._
 
 
 
-## Instalación y configuración de software para acceso remoto y transferencia de archivos
+## Instalación y configuración de software para acceso remoto y transferencia de archivos WinSCP y PuTTY
 
 ![PUTTY](https://user-images.githubusercontent.com/80927233/119920352-34d03200-bf3a-11eb-815e-ce236832d618.jpg)
-![WinSCP](https://user-images.githubusercontent.com/80927233/119919404-61834a00-bf38-11eb-98fc-040bc80bfdf4.jpg)
+![WinSCPpage](https://user-images.githubusercontent.com/80927233/119920551-84aef900-bf3a-11eb-8c0f-fb8a2d486099.jpg)
 
 ## Acceso remoto a servidor Pomeo
 
