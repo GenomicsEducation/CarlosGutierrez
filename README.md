@@ -67,7 +67,7 @@ Adhesión GEO: GSM4041277
 - Ejecuciones: 1 Ejecución, 52.087 puntos, 21,5M bases, 16,5 MB
 
   |Ejecutar |Puntos |Bases| Tamaño| Fecha|
-  |----------------|--------------------|
+  |--------|--------|-------|--------|-----|
   |SRR10009745 |52,087 |21.5M |16.5Mb |2019-10-01|
 
 
