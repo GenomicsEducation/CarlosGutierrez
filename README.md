@@ -28,8 +28,9 @@ https://www.ncbi.nlm.nih.gov/assembly/GCF_000002035.6
 
 La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente clones que fueron secuenciados como parte del Proyecto del Genoma del Pez Cebra en el Instituto Wellcome Trust Sanger. Los productos de PCR y la secuencia shotgun WGS, provenientes principalmente del conjunto WGS31 (CABZ00000000.1), pero también WGS29 (CAAK00000000.1) y WGS32 (CZQB00000000.1) se han agregado cuando es necesario para llenar los vacíos en el genoma. Además, se agregaron secuencias no colocadas desde WGS31 si presentaban al menos 5 kb de secuencia no repetitiva, o si se podían detectar alineaciones con el cDNA que no estaban ya cubiertas por las secuencias colocadas.
 
-  |Regiones con loci alternativos o parches|607|
+  |Característica|Valor|
   |----------------|--------------------|
+  |Regiones con loci alternativos o parches|607|
   |Largo total de la secuencia|1,373,454,788|
   |Largo total sin vacíos|1,368,765,506|
   |Espacio entre andamios|925|
