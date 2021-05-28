@@ -6,16 +6,44 @@
 - Magíster en Biotecnología
 
 ## **Descripción:**  
-_A completar dependiendo de los datos seleccionados._
+
+**GRCz11** Genome Reference Consortium Zebrafish Build 11
+
+- Organismo: Danio rerio (zebrafish)
+- Nombre infraespecífico: Raza: Tuebingen
+- Muestra biológica: SAMN06930106
+- Projecto biológico: PRJNA11776
+- Remitente: Genome Reference Consortium
+- Fecha: 2017/05/09
+- Tipo de ensamblaje: Haploide con loci alternativo
+- Nivel de ensamblaje: Cromosoma
+- Representación del Genoma: Completa
+- Categoría RefSeq: Genoma de referencia
+- Sinónimos: danRer11
+- Acceso de ensamblaje GenBank: GCA_000002035.4 (último)
+- Acceso de ensamblaje RefSeq: GCF_000002035.6 (último)
+- IDs: 1104621 [UID] 4482478 [GenBank] 4514068 [RefSeq]
+
+https://www.ncbi.nlm.nih.gov/assembly/GCF_000002035.6
+
+La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente clones que fueron secuenciados como parte del Proyecto del Genoma del Pez Cebra en el Instituto Wellcome Trust Sanger. Los productos de PCR y la secuencia shotgun WGS, provenientes principalmente del conjunto WGS31 (CABZ00000000.1), pero también WGS29 (CAAK00000000.1) y WGS32 (CZQB00000000.1) se han agregado cuando es necesario para llenar los vacíos en el genoma. Además, se agregaron secuencias no colocadas desde WGS31 si presentaban al menos 5 kb de secuencia no repetitiva, o si se podían detectar alineaciones con el cDNA que no estaban ya cubiertas por las secuencias colocadas.
+
+|Regiones con loci alternativos o parches|607|
+|Largo total de la secuencia|1,373,454,788|
+|Largo total sin vacíos|1,368,765,506|
+|Espacio entre andamios|925|
+|Número de andamios|1,917|
+|Andamio N50|7,379,053|
+|Andamio L50|44|
+|Número de contigs|19,725|
+|Contig N50|1,422,317|
+|Contig L50|219|
+|Número total de cromosomas y plásmidos|25|
+|Número de secuencias componentes (WGS o clone)|31,634|
 
 
 
-
-
-
-
-
-## Instalación y configuración de software para acceso remoto y transferencia de archivos WinSCP y PuTTY
+## Instalación y configuración de software para acceso remoto y transferencia de archivos, programas WinSCP y PuTTY
 
 ## **PuTTY**
 ![PUTTY](https://user-images.githubusercontent.com/80927233/119920352-34d03200-bf3a-11eb-815e-ce236832d618.jpg)
