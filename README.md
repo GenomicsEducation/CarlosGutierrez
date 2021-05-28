@@ -7,7 +7,9 @@
 
 ## **Descripción:**  
 
-**GRCz11** Genome Reference Consortium Zebrafish Build 11
+### **GRCz11** Genome Reference Consortium Zebrafish Build 11
+
+https://www.ncbi.nlm.nih.gov/assembly/GCF_000002035.6
 
 - Organismo: Danio rerio (zebrafish)
 - Nombre infraespecífico: Raza: Tuebingen
@@ -24,11 +26,9 @@
 - Acceso de ensamblaje RefSeq: GCF_000002035.6 (último)
 - IDs: 1104621 [UID] 4482478 [GenBank] 4514068 [RefSeq]
 
-https://www.ncbi.nlm.nih.gov/assembly/GCF_000002035.6
-
 La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente clones que fueron secuenciados como parte del Proyecto del Genoma del Pez Cebra en el Instituto Wellcome Trust Sanger. Los productos de PCR y la secuencia shotgun WGS, provenientes principalmente del conjunto WGS31 (CABZ00000000.1), pero también WGS29 (CAAK00000000.1) y WGS32 (CZQB00000000.1) se han agregado cuando es necesario para llenar los vacíos en el genoma. Además, se agregaron secuencias no colocadas desde WGS31 si presentaban al menos 5 kb de secuencia no repetitiva, o si se podían detectar alineaciones con el cDNA que no estaban ya cubiertas por las secuencias colocadas.
 
-  |Característica|Valor|
+  |Característica|Tamaño|
   |----------------|--------------------|
   |Regiones con loci alternativos o parches|607|
   |Largo total de la secuencia|1,373,454,788|
@@ -43,17 +43,44 @@ La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente 
   |Número total de cromosomas y plásmidos|25|
   |Número de secuencias componentes (WGS o clone)|31,634|
 
+### SRX6747970: GSM4041277: MPs200vm.3; Danio rerio; OTROS
+- 1 ION_TORRENT (Ion S5 XL) Ejecución: 52,087 puntos, 21,5M bases, 16.5Mb
+
+https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]
+
+**Remitido por:** NCBI (GEO)
+**Estudio:** rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno
+**Muestra:** MPs200vm.3
+- Organismo: Danio rerio
+
+**Librería:**
+- Instrumento: Ion S5 XL
+- Estrategia: OTRO
+- Fuente: GENOMICA
+- Selección: OTRO
+- Diseño: ÚNICO
+
+Protocolo de construcción: Se extruyó el contenido del intestino extraído del sujeto. El ADN total en el contenido intestinal se aisló con DNeasy Blood & Tissue Kit (QIAGEN, Alemania). La concentración de ADN se midió usando un espectrofotómetro NanoDrop (NanoDrop One, Thermo, EE. UU.). Después del análisis de la calidad del ADN por electroforesis, el DNA extraído se amplificó utilizando cebadores (cebador sentido: 5'-CCTAYGGGRBGCASCAG-3 '; cebador antisentido: 5'-GGACTACNNGGGTATCTAAT-3') para apuntar a las regiones V3-V4 del gen bacteriano del ARNr 16S . Los productos de PCR obtenidos se purificaron mediante el kit de extracción de gel GeneJET (Thermofisher, EE. UU.) Y se aplicaron para construir la biblioteca de secuenciación. La biblioteca se secuenció en una plataforma Ion S5TM XL.
+Atributos del experimento:
+Adhesión GEO: GSM4041277
+
+- Ejecuciones: 1 Ejecución, 52.087 puntos, 21,5M bases, 16,5 MB
+
+  |Ejecutar |Puntos |Bases| Tamaño| Fecha|
+  |----------------|--------------------|
+  |SRR10009745 |52,087 |21.5M |16.5Mb |2019-10-01|
+
 
 
 ## Instalación y configuración de software para acceso remoto y transferencia de archivos, programas WinSCP y PuTTY
 
-## **PuTTY**
+### **PuTTY**
 ![PUTTY](https://user-images.githubusercontent.com/80927233/119920352-34d03200-bf3a-11eb-815e-ce236832d618.jpg)
 
-## **WinSCP**
+### **WinSCP**
 ![WinSCPpage](https://user-images.githubusercontent.com/80927233/119920551-84aef900-bf3a-11eb-8c0f-fb8a2d486099.jpg)
 
-## **Nano**
+### **Nano**
 ![NANO](https://user-images.githubusercontent.com/80927233/119920375-3dc10380-bf3a-11eb-885f-92805dd9d2b1.jpg)
 
 ## Acceso remoto a servidor Pomeo
@@ -62,10 +89,10 @@ La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente 
 
 ## Instalación y configuración Conda, Nano y SRA Toolkit
 
-- **Anaconda en Pomeo (PuTTY) y Nano :: Anaconda.org**
+### **Anaconda en Pomeo (PuTTY) y Nano :: Anaconda.org**
 ![Conda](https://user-images.githubusercontent.com/80927233/119927124-d493bd00-bf46-11eb-9bf2-0dfac07f129b.jpg)
 
-- **SRA Toolkit**
+### **SRA Toolkit**
 ![SRA](https://user-images.githubusercontent.com/80927233/119927129-d6f61700-bf46-11eb-9d69-f38b276c9a26.jpg)
 
 - https://www.nano-editor.org/dist/
