@@ -1,11 +1,11 @@
-# Práctica elaboración de un proyecto de genómica aplicada.
+# Práctica elaboración de un Proyecto de Genómica Aplicada.
 
 ## **Autor**
 - Carlos Gutierrez Ferreira
 - Chileno
 - Magíster en Biotecnología
 
-## **Descripción:**  
+## **Descripción del Genoma de Referencia y Bioproyecto.**  
 
 ### **GRCz11** Genome Reference Consortium Zebrafish Build 11
 
@@ -43,17 +43,21 @@ La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente 
   |Número total de cromosomas y plásmidos|25|
   |Número de secuencias componentes (WGS o clone)|31,634|
 
-## **Bioproyecto SRA**
+## **Bioproyecto SRA**  
 
-### SRX6747970: GSM4041277: MPs200vm.3; Danio rerio; OTROS
-- 1 ION_TORRENT (Ion S5 XL) Ejecución: 52,087 puntos, 21,5M bases, 16.5Mb
+### SRX6747970: GSM4041277: MPs200vm.3  
 
-https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]
+https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]  
 
-**Remitido por:** NCBI (GEO)  
-**Estudio:** rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno  
-**Muestra:** MPs200vm.3  
-- Organismo: Danio rerio
+- Remitido por: NCBI (GEO)  
+- Estudio: rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno  
+- Muestra: MPs200vm.3  
+- Organismo: Danio rerio  
+- Método: 1 ION_TORRENT (Ion S5 XL)  
+- Ejecución: 52,087 puntos, 21,5M bases, 16.5Mb  
+
+**Abstract**
+Microplastics (MPs) as widespread contamination pose high risk for aquatic organisms. Intestinal microbiota has have high interaction with immune system of host body. In this study, intestinal microbiota of zebrafish after Polystyrene (PS-MPs) exposure was characterized by 16S rDNA amplicon sequencing. We found that 100nm and 200µm PS-MPs exposure significantly increased diversity of intestinal microbiota and all the three sizes of PS-MPs increased abundance of pathogenic bacteria. Overall design: Detection of intestine microbes were conducted in zebrafish followed treatment of MPs with different size (100nm, 5µm and 200µm). For each assay, three individual trials were taken.
   
 **Librería:**  
 - Instrumento: Ion S5 XL
