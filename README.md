@@ -56,7 +56,7 @@ https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]
 - Método: 1 ION_TORRENT (Ion S5 XL)  
 - Ejecución: 52,087 puntos, 21,5M bases, 16.5Mb  
 
-**Abstract**
+**Abstract**  
 Microplastics (MPs) as widespread contamination pose high risk for aquatic organisms. Intestinal microbiota has have high interaction with immune system of host body. In this study, intestinal microbiota of zebrafish after Polystyrene (PS-MPs) exposure was characterized by 16S rDNA amplicon sequencing. We found that 100nm and 200µm PS-MPs exposure significantly increased diversity of intestinal microbiota and all the three sizes of PS-MPs increased abundance of pathogenic bacteria. Overall design: Detection of intestine microbes were conducted in zebrafish followed treatment of MPs with different size (100nm, 5µm and 200µm). For each assay, three individual trials were taken.
   
 **Librería:**  
