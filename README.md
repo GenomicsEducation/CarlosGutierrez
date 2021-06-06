@@ -71,7 +71,7 @@ Atributos del experimento:
 Adhesión GEO: GSM4041277
 
 - Ejecuciones: 1 Ejecución, 52.087 puntos, 21,5M bases, 16,5 MB
-- Metadata del proyecto: 
+- Metadata: [Bioproyecto](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Metadata-PRJNA561331.txt)
 
   |Ejecución |Puntos |Bases| Tamaño| Fecha|
   |--------|--------|-------|--------|-----|
