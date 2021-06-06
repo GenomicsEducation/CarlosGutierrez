@@ -71,7 +71,7 @@ Atributos del experimento:
 Adhesión GEO: GSM4041277
 
 - Ejecuciones: 1 Ejecución, 52.087 puntos, 21,5M bases, 16,5 MB
-- Metadata: [Bioproyecto](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Metadata-PRJNA561331.txt)
+- Metadata: [Bioproyecto](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Metadata/Metadata-SRX6747970.txt)
 
   |Ejecución |Puntos |Bases| Tamaño| Fecha|
   |--------|--------|-------|--------|-----|
@@ -123,15 +123,13 @@ Adhesión GEO: GSM4041277
 - conda list # Contenido de conda.
 - conda --version # Version de conda.
 - conda install -c conda-forge nano # Instalación de nano en conda.
-- nano script1.sh | # !/bin/bash | # Mi primer script
-- echo Curso de Genómica # Prueba de script en Nano, guardar con Ctrl+O y cerrrar con Ctrl+X
-- bash script1.sh # Ejecutar el script en la terminal.
+- nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/SCRIPT/script1.sh) # Prueba de script en Nano, guardar con Ctrl+O y cerrrar con Ctrl+X
+- bash script1.sh # Ejecutar el script1 en la terminal.
 
 ## Práctica descarga de secuencias NGS con SRA Toolkit
 
-- nano script2.sh | # !/bin/bash | # Descarga y descomprime SRA Toolkit
-- http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-centos_linux64.tar.gz
-- tar -xzf sratoolkit.current-centos_linux64.tar.gz # Script en Nano para descargar e instalar SRA Toolkit, ejecutar con Bash.
+- nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/SCRIPT/script2.sh) # Carga Nano con el script2, guardar y cerrar
+- bash script2.sh # Ejecuta el script2 en Nano para descargar e instalar SRA Toolkit.
 - bin/vdb-config --interactive # Ejecutar en el directorio: /sratoolkit.2.10.5-centos_linux64
 - fastq-dump --stdout SRR390728 | head -n 8 # Probar que SRAToolkit está trabajando correctamente.
 - fastq-dump -X 5 -Z SRR6019464 # Descarga y muestra el contenido de las 5 primeras secuencias del archivo SRR6019464.
