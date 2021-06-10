@@ -58,10 +58,12 @@
 
 - nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script2.sh) # Carga Nano con el script2, guardar y cerrar
 - bash script2.sh # Ejecuta el script2 en Nano para descargar e instalar SRA Toolkit.
-- bin/vdb-config --interactive # Ejecutar en el directorio: /sratoolkit.2.10.5-centos_linux64
-- fastq-dump --stdout SRR390728 | head -n 8 # Probar que SRAToolkit está trabajando correctamente.
-- fastq-dump -X 5 -Z SRR6019464 # Descarga y muestra el contenido de las 5 primeras secuencias del archivo SRR6019464.
-- fastq-dump -X 5 SRR6019464 # Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
-- fastq-dump --gzip --split-3 SRR6019464 # Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
-- zcat SRR6019464.fastq.gz | echo $((`wc -l`/4)) # Explora y entrega el número de reads descargados.
+- cd sratoolkit.2.11.0-centos_linux64 # Cambiar el directorio para ejecutar SRA Toolkit.
+- bin/vdb-config --interactive # Ejecuta vdb-config en el directorio bin de forma interactiva, Tab y Enter para salir
+- bin/fastq-dump --stdout SRR390728 | head -n 8 # Probar que SRAToolkit está trabajando correctamente.
+- bin/fastq-dump -X 5 -Z SRR6019464 # Descarga y muestra el contenido de las 5 primeras secuencias del archivo SRR6019464.
+- bin/fastq-dump -X 5 SRR6019464 # Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
+- bin/fastq-dump --gzip --split-3 SRR6019464 # Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
+- zcat SRR6019464_1.fastq.gz | echo $((`wc -l`/4)) # Explora y entrega el número de reads descargados en el 1er archivo.
+- # Ej: 23772
 
