@@ -51,7 +51,7 @@ dd0bdf8c722226ea34611941f2391774  SRR2006763_1.fastq
 - nano [fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) # Carga a Nano con el script fastqc, ingresar los comandos indicados, guardar y cerrar.  
 - bash fastqc.sh
 
-[Carpeta](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/)
+[Carpeta](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/)  
 [SRR2006763_1_fastqc](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR2006763_1_fastqc.html)  
 [SRR2006763_2_fastqc](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR2006763_2_fastqc.html)  
 
