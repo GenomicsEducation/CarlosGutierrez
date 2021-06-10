@@ -15,13 +15,13 @@
 - conda search -c bioconda fast-qc
 - conda search -c bioconda fastqc
 - conda search -c bioconda trimmomatic
-- # Busca los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funcionara debido a que no existe.
+- **Busca los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funcionara debido a que no existe.**
 - conda install -c bioconda fastqc
 - conda install -c bioconda trimmomatic
-- # Instala los softwares previamente buscados.
+- **Instala los softwares previamente buscados.**
 - mkdir SRA_samples
 - cd SRA_samples
-- # Crea y accede a la carpeta SRA_samples para trabajar en ella.
+- **Crea y accede a la carpeta SRA_samples para trabajar en ella.**
 
 ## Descarga de la biomuestra desde SRA
 
@@ -40,6 +40,7 @@ reads written : 5,712,014
 ## Comprobación de la integridad de los archivos
 
 - md5sum SRR2006763_1.fastq SRR2006763_2.fastq > md5_samples # md5sum verifica los archivos y redirecciona el resultado entregando los valores:  
+
 dd0bdf8c722226ea34611941f2391774  SRR2006763_1.fastq  
 1c63ca4a6e14de4f93f7621e3e990ec9  SRR2006763_2.fastq  
 
@@ -54,7 +55,7 @@ Este comando procesa los archivos fastq y entrega un informe en formato HTML y u
 Se puede acceder al directorio home2 desde el puerto [8787](http://200.54.220.141:8787/) donde se ingresa con el mismo usuario y contraseña.  
 Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos con una interfaz de RStudio como se observa en la imagen.
 
-
+![fastqc](https://user-images.githubusercontent.com/80927233/121597512-cf3a7600-ca0e-11eb-8c0f-803c4dab20d1.png)
 
 ## Filtrado y poda
 
