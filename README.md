@@ -1,6 +1,6 @@
+# Desarrollo del Curso en Genética y Genómica 
 
-
-# **Autor**
+## **Autor**
 ### Carlos Gutierrez Ferreira  
 - Chileno
 - Magíster en Biotecnología
