@@ -49,12 +49,12 @@
 - conda list # Contenido de conda.
 - conda --version # Version de conda.
 - conda install -c conda-forge nano # Instalación de nano en conda.
-- nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/SCRIPT/script1.sh) # Prueba de script en Nano, guardar con Ctrl+O y cerrrar con Ctrl+X
+- nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script1.sh) # Prueba de script en Nano, guardar con Ctrl+O y cerrrar con Ctrl+X
 - bash script1.sh # Ejecutar el script1 en la terminal.
 
 ## Práctica descarga de secuencias NGS con SRA Toolkit
 
-- nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/SCRIPT/script2.sh) # Carga Nano con el script2, guardar y cerrar
+- nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script2.sh) # Carga Nano con el script2, guardar y cerrar
 - bash script2.sh # Ejecuta el script2 en Nano para descargar e instalar SRA Toolkit.
 - bin/vdb-config --interactive # Ejecutar en el directorio: /sratoolkit.2.10.5-centos_linux64
 - fastq-dump --stdout SRR390728 | head -n 8 # Probar que SRAToolkit está trabajando correctamente.
@@ -62,3 +62,4 @@
 - fastq-dump -X 5 SRR6019464 # Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
 - fastq-dump --gzip --split-3 SRR6019464 # Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
 - zcat SRR6019464.fastq.gz | echo $((`wc -l`/4)) # Explora y entrega el número de reads descargados.
+
