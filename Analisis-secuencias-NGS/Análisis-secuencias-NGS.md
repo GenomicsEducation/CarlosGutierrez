@@ -25,10 +25,10 @@
 
 ## Descarga de la biomuestra desde SRA
 
-- nano [download.sh]() # Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
+- nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) # Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
 - bash download.sh # Ejecuta el script download.sh que descargara y validara las secuencias de la biomuestra SRR2006763
 - ls -l -h # Revisa los contenidos del directorio SRA_samples.
-- nano [fdump.sh]() # Carga a Nano con el script fdump, ingresar los comandos indicados, guardar y cerrar.
+- nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh) # Carga a Nano con el script fdump, ingresar los comandos indicados, guardar y cerrar.
 - bash fdump.sh # El script fdump Permite obtener los archivos fastq de la biomuestra SRR2006763
 
 ### Al finalizar resultara lo siguiente:  
@@ -48,9 +48,13 @@ dd0bdf8c722226ea34611941f2391774  SRR2006763_1.fastq
 
 ## Análisis del control de calidad
 
-- nano [fastqc.sh]() # Carga a Nano con el script fastqc, ingresar los comandos indicados, guardar y cerrar.  
+- nano [fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) # Carga a Nano con el script fastqc, ingresar los comandos indicados, guardar y cerrar.  
 - bash fastqc.sh
-  
+
+[Carpeta](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/)
+[SRR2006763_1_fastqc](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR2006763_1_fastqc.html)  
+[SRR2006763_2_fastqc](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR2006763_2_fastqc.html)  
+
 Este comando procesa los archivos fastq y entrega un informe en formato HTML y un archivo .zip con el reporte y los datos.  
 Se puede acceder al directorio home2 desde el puerto [8787](http://200.54.220.141:8787/) donde se ingresa con el mismo usuario y contraseña.  
 Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos con una interfaz de RStudio como se observa en la imagen.
@@ -59,16 +63,16 @@ Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos 
 
 ## Filtrado y poda
 
-- nano [trimm.sh]() # Carga a Nano con el script trimm, ingresar los comandos indicados, guardar y cerrar.
+- nano [trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) # Carga a Nano con el script trimm, ingresar los comandos indicados, guardar y cerrar.
 - bash trimm.sh # Este script poda a las secuencias con un tamaño menor a 60bp y entrega los archivos filtrados.
 - gunzip SRR20067634_filtered_1P.fastq.gz # Con este comando se pueden descomprimir los archivos obtenidos, no obstante, fastqc puede trabajar sobre archivos comprimidos.
 - fastqc  *.fastq.gz # Realiza un análisis de calidad de las muestras.
 
-[SRR20067634_filtered_1P]()
-[SRR20067634_filtered_2P]()
-[SRR20067634_filtered_1U]()
-[SRR20067634_filtered_2U]()
+[SRR20067634_filtered_1P](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR20067634_filtered_1P_fastqc.html)  
+[SRR20067634_filtered_2P](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR20067634_filtered_2P_fastqc.html)  
+[SRR20067634_filtered_1U](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR20067634_filtered_1U_fastqc.html)  
+[SRR20067634_filtered_2U](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR20067634_filtered_2U_fastqc.html)  
 
-Al comparar los distintos filtrados con los originales se puede observar que han sido podados exitosamente.
-El comando elimino todos los fragmentos inferiores a 60bp, no obstante, siguen existiendo muchos fragmentos inferiores a 89bp en el set de datos y por tanto el programa entrega un signo de exclamación en ese resultado. 
+Al comparar los distintos filtrados con los datos originales se puede observar que han sido podados exitosamente.
+El comando eliminó todos los fragmentos inferiores a 60bp, no obstante, siguen existiendo muchos fragmentos inferiores a 89bp en el set de datos y por tanto el programa entrega un signo de exclamación en ese resultado. 
 
