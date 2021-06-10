@@ -12,4 +12,4 @@
 ### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/Linux-Genómica.md)
 
 ## Introducción al análisis de secuencias NGS
-### [Descripción de la actividad](
+### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Análisis-secuencias-NGS.md)
