@@ -49,6 +49,8 @@
 - conda list # Contenido de conda.
 - conda --version # Version de conda.
 - conda install -c conda-forge nano # Instalación de nano en conda.
+
+### Práctica creación de script usando el editor de texto NANO
 - nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script1.sh) # Prueba de script en Nano, guardar con Ctrl+O y cerrrar con Ctrl+X
 - bash script1.sh # Ejecutar el script1 en la terminal.
 
