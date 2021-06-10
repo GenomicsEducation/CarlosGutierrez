@@ -136,3 +136,7 @@ Adhesión GEO: GSM4041277
 - fastq-dump -X 5 SRR6019464 # Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
 - fastq-dump --gzip --split-3 SRR6019464 # Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
 - zcat SRR6019464.fastq.gz | echo $((`wc -l`/4)) # Explora y entrega el número de reads descargados.
+
+## Introducción al análisis de secuencias NGS
+
+- 
