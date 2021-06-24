@@ -51,9 +51,9 @@ ls
 ![Winscp](https://user-images.githubusercontent.com/80927233/123209976-5ff16700-d48f-11eb-9183-9e165dc07b4f.png)
 
 ## Indexación del genoma de referencia y alineamiento  
-[aln_mt.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/aln_mt.sh)
-[muestra_stat.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Fasta/muestra_stat.txt)
-[Controles "less"](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation)
+[aln_mt.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/aln_mt.sh)  
+[muestra_stat.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Fasta/muestra_stat.txt)  
+[Controles "less"](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation)  
 
 ```
 # Se realizó la indexación del genoma mitocondrial de referencia con el software BWA.
