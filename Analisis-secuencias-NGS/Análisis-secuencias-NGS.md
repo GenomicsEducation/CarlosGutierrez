@@ -89,7 +89,7 @@ Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos 
 ![fastqc](https://user-images.githubusercontent.com/80927233/121597512-cf3a7600-ca0e-11eb-8c0f-803c4dab20d1.png)
 
 ## Filtrado y poda
-![trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
+[trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
 
 ```
 # Se cargó a Nano con el script trimm, ingresando los comandos indicados, guardar y cerrar.
