@@ -11,5 +11,9 @@
 ## Práctica Introducción a Linux para genómica
 ### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/Linux-Genómica.md)
 
-## Introducción al análisis de secuencias NGS
-### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Análisis-secuencias-NGS.md)
+## Análisis de secuencias NGS
+### Instalación y configuración del software junto al análisis de control de calidad, filtrado y poda  
+#### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Análisis-secuencias-NGS.md)
+
+### Alineamiento
+#### [Descripción de la actividad]()
