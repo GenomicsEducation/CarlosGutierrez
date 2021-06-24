@@ -30,8 +30,8 @@ cd SRA_samples
 ```
 
 ## Descarga de la biomuestra desde SRA
-[download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
-[fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)
+[download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh)  
+[fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)  
 
 ```
 # Se cargó Nano con el script donwload, ingresando los comandos indicados, guardar y cerrar.
