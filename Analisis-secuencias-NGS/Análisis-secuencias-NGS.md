@@ -1,5 +1,5 @@
 # Introducción al análisis de secuencias NGS  
-## Análisis de control de calidad, filtrado y poda  
+# Análisis de control de calidad, filtrado y poda  
 
 ## **Autor**
 ### Carlos Gutierrez Ferreira  
