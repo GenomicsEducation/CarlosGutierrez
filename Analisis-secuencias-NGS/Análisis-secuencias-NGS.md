@@ -13,32 +13,36 @@
 
 ```
 # Se configuró el canal de Bioconda para su uso.
-- conda config --add channels bioconda 
-- conda search -c bioconda fast-qc
-- conda search -c bioconda fastqc
+conda config --add channels bioconda 
+conda search -c bioconda fast-qc
+conda search -c bioconda fastqc
+
 # **Se buscaron los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funciona debido a que no existe.**
-- conda search -c bioconda trimmomatic 
-- conda install -c bioconda fastqc
+conda search -c bioconda trimmomatic 
+conda install -c bioconda fastqc
+
 # **Se instalaron los softwares previamente buscados.**
-- conda install -c bioconda trimmomatic 
+conda install -c bioconda trimmomatic 
+
 # **Se creó y accedió a la carpeta SRA_samples para trabajar en ella.**
-- mkdir SRA_samples
-- cd SRA_samples 
+mkdir SRA_samples
+cd SRA_samples 
 ```
 
 ## Descarga de la biomuestra desde SRA
 
 ```
 # Se cargó Nano con el script donwload, ingresando los comandos indicados, guardar y cerrar.
-- nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
+nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
 # Se ejecutó el script download.sh que descargara y validara las secuencias de la biomuestra SRR2006763
-- bash download.sh 
+bash download.sh 
+
 # Revisa los contenidos del directorio SRA_samples.
-- ls -l -h 
+ls -l -h 
 # Se cargó a Nano con el script fdump, ingresando los comandos indicados, guardar y cerrar.
-- nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)
+nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)
 # El script fdump Permite obtener los archivos fastq de la biomuestra SRR2006763
-- bash fdump.sh 
+bash fdump.sh 
 ```
 
 ### Al finalizar resultara lo siguiente:  
@@ -51,7 +55,7 @@ reads written : 5,712,014
 
 ```
 # md5sum verifica los archivos y redirecciona el resultado. 
-- md5sum SRR2006763_1.fastq SRR2006763_2.fastq > md5_samples
+md5sum SRR2006763_1.fastq SRR2006763_2.fastq > md5_samples
 ```
 
 - Entregando los valores:  
@@ -60,15 +64,15 @@ dd0bdf8c722226ea34611941f2391774  SRR2006763_1.fastq
 
 ```
 # Se comprobó la integridad de ambas biomuestras, indicando que "La suma coincide" en caso verdadero.
-- md5sum -c md5_samples 
+md5sum -c md5_samples 
 ```
 
 ## Análisis del control de calidad
 
 ```
 # Se cargó a Nano con el script fastqc, ingresando los comandos indicados, guardar, cerrar y ejecutar. 
-- nano [fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) 
-- bash fastqc.sh
+nano [fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) 
+bash fastqc.sh
 ```
 
 [Carpeta](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/)  
@@ -85,13 +89,14 @@ Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos 
 
 ```
 # Se cargó a Nano con el script trimm, ingresando los comandos indicados, guardar y cerrar.
-- nano [trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
+nano [trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
 # Este script poda a las secuencias con un tamaño menor a 60bp y entrega los archivos filtrados.
-- bash trimm.sh 
+bash trimm.sh 
+
 # Con este comando se pueden descomprimir los archivos obtenidos, no obstante, fastqc puede trabajar sobre archivos comprimidos.
-- gunzip SRR20067634_filtered_1P.fastq.gz 
+gunzip SRR20067634_filtered_1P.fastq.gz 
 # Se realizó un análisis de calidad de las muestras.
-- fastqc  *.fastq.gz 
+fastqc  *.fastq.gz 
 ```
 
 [SRR20067634_filtered_1P](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/FastQC/SRR20067634_filtered_1P_fastqc.html)  
