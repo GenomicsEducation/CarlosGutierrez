@@ -72,4 +72,5 @@ samtools flagstat SRR2006763.bam > muestra_stat.txt
 
 Se utilizó el software IGV para visualizar el alineamiento obtenido frente al genoma mitocondrial de referencia, para esto se descargaron los archivos [SRR2006763.sort.bam](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Fasta/SRR2006763.sort.bam) y [SRR2006763.sort.bam.bai]( https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Fasta/SRR2006763.sort.bam.bai) obtenidos desde WinSCP y se cargaron al programa IGV junto con el genoma de referencia para *Salmo salar* y su sector mitocondrial como se observa en la siguiente imagen:
 
-![IGVSSA](https://user-images.githubusercontent.com/80927233/123213039-86b19c80-d493-11eb-9535-3a11104b2daa.png)
+![IGVSSA](https://user-images.githubusercontent.com/80927233/123213217-bd87b280-d493-11eb-97a6-979fdd57f756.png)
+
