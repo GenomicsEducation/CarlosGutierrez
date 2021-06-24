@@ -14,14 +14,14 @@
 ```
 # Se configuró el canal de Bioconda para su uso.
 conda config --add channels bioconda 
-conda search -c bioconda fast-qc
-conda search -c bioconda fastqc
 
 # **Se buscaron los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funciona debido a que no existe.**
+conda search -c bioconda fast-qc
+conda search -c bioconda fastqc
 conda search -c bioconda trimmomatic 
-conda install -c bioconda fastqc
 
 # **Se instalaron los softwares previamente buscados.**
+conda install -c bioconda fastqc
 conda install -c bioconda trimmomatic 
 
 # **Se creó y accedió a la carpeta SRA_samples para trabajar en ella.**
