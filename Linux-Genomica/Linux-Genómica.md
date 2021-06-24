@@ -34,36 +34,69 @@
 
 ## Práctica de Shell y Linux
 
-- bash --version # Versión bash.
-- pwd # Nombre del directorio.
-- df -hP # Espacio total en el sistema.
-- mkdir # Crea un directorio.
-- cd # Cambia al directorio.
-- cat; less; wc # Lee un archivo e imprime su contenido; recorre el archivo; cuenta líneas, palabras y caracteres.
-- ls -l -h # Listado de objetos en un directorio, en detalle y legible.
-- rm -r # Remover un fichero o directorio forzando la acción.
-- exit # Cierra PuTTY de forma correcta.
-- wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh # Descargar el repositorio de anaconda.
-- bash Miniconda3-latest-Linux-x86_64.sh # Ejecutar anaconda.
-- source ~/.bashrc # Activacion de miniconda.
-- conda list # Contenido de conda.
-- conda --version # Version de conda.
-- conda install -c conda-forge nano # Instalación de nano en conda.
+```
+# Versión bash disponible.
+- bash --version 
+# Para visualizar el nombre del directorio.
+- pwd 
+# Espacio total en el sistema.
+- df -hP 
+# Crea un directorio.
+- mkdir 
+# Cambia al directorio indicado, si se encuentra en blanco procede al principal, en este caso home2.
+- cd 
+# Lee un archivo e imprime su contenido; recorre el archivo; cuenta líneas, palabras y caracteres.
+- cat; less; wc 
+# Listado de objetos en un directorio, en detalle y legible.
+- ls -l -h 
+# Remover un fichero o directorio forzando la acción.
+- rm -r 
+# Cierra PuTTY de forma correcta.
+- exit 
+# Se descargó el repositorio de anaconda.
+- wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh 
+# Se ejecutó anaconda.
+- bash Miniconda3-latest-Linux-x86_64.sh 
+# Se activó miniconda.
+- source ~/.bashrc 
+# Contenido de conda.
+- conda list 
+# Versión de conda.
+- conda --version 
+# Se instaló nano en conda.
+- conda install -c conda-forge nano 
+```
 
 ### Práctica creación de script usando el editor de texto NANO
-- nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script1.sh) # Prueba de script en Nano, ingresar los comandos indicados en el archivo, guardar con Ctrl+O y cerrrar con Ctrl+X
-- bash script1.sh # Ejecutar el script1 en la terminal.
+
+```
+# Prueba de script en Nano, Se ingresaron los comandos indicados en el archivo, guardar con Ctrl+O y cerrrar con Ctrl+X
+- nano [script1.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script1.sh) 
+# Se ejecutó el script1 en la terminal.
+- bash script1.sh 
+```
 
 ## Práctica descarga de secuencias NGS con SRA Toolkit
 
-- nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script2.sh) # Carga Nano con el script2, ingresar los comandos indicados, guardar y cerrar.
-- bash script2.sh # Ejecuta el script2 en Nano para descargar e instalar SRA Toolkit.
-- cd sratoolkit.2.11.0-centos_linux64 # Cambiar el directorio para ejecutar SRA Toolkit.
-- bin/vdb-config --interactive # Ejecuta vdb-config en el directorio bin de forma interactiva, Tab y Enter para salir.
-- bin/fastq-dump --stdout SRR390728 | head -n 8 # Probar que SRAToolkit está trabajando correctamente.
-- bin/fastq-dump -X 5 -Z SRR6019464 # Descarga y muestra el contenido de las 5 primeras secuencias del archivo SRR6019464.
-- bin/fastq-dump -X 5 SRR6019464 # Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
-- bin/fastq-dump --gzip --split-3 SRR6019464 # Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
-- zcat SRR6019464_1.fastq.gz | echo $((`wc -l`/4)) # Explora y entrega el número de reads descargados en el 1er archivo.
-- ### Ejemplo: 23772
+```
+# Se ejecutó Nano con el script2, ingresando los comandos indicados, guardar y cerrar.
+- nano [script2.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/SCRIPT/script2.sh) 
+# Se ejecutó el script2 en Nano para descargar e instalar SRA Toolkit.
+- bash script2.sh 
+# Se cambió el directorio para ejecutar SRA Toolkit.
+- cd sratoolkit.2.11.0-centos_linux64 
+# Ejecuta vdb-config en el directorio bin de forma interactiva, Tab y Enter para salir.
+- bin/vdb-config --interactive 
+# Probar que SRAToolkit está trabajando correctamente, lo cual entrega las primeras 8 lineas del bioproyecto.
+- bin/fastq-dump --stdout SRR390728 | head -n 8 
+# Se descargaron las primeras 5 secuencias del archivo SRR6019464, mostrandolas en la interfaz.
+- bin/fastq-dump -X 5 -Z SRR6019464 
+# Descarga el contenido de las 5 primeras secuencias y las almacena en un archivo con formato fastq.
+- bin/fastq-dump -X 5 SRR6019464 
+# Descarga la biomuestra completa, detener la ejecución luego de unos momentos debido a que son demasiados datos.
+- bin/fastq-dump --gzip --split-3 SRR6019464 
+# Explora y entrega el número de reads descargados en el 1er archivo.
+- zcat SRR6019464_1.fastq.gz | echo $((`wc -l`/4)) 
+```
 
+- ### Ejemplo: 23772
