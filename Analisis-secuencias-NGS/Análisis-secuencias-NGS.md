@@ -11,25 +11,27 @@
 
 ## Configuración de bioconda e instalación de software
 
+```
 - conda config --add channels bioconda # Configura el canal de Bioconda para su uso.
 - conda search -c bioconda fast-qc
 - conda search -c bioconda fastqc
-- conda search -c bioconda trimmomatic
-- **Busca los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funcionara debido a que no existe.**
+- conda search -c bioconda trimmomatic # **Busca los softwares de fastqc y trimmomatic en Bioconda, el primer comando no funcionara debido a que no existe.**
 - conda install -c bioconda fastqc
-- conda install -c bioconda trimmomatic
-- **Instala los softwares previamente buscados.**
+- conda install -c bioconda trimmomatic # **Instala los softwares previamente buscados.**
 - mkdir SRA_samples
-- cd SRA_samples
-- **Crea y accede a la carpeta SRA_samples para trabajar en ella.**
+- cd SRA_samples # **Crea y accede a la carpeta SRA_samples para trabajar en ella.**
+```
 
 ## Descarga de la biomuestra desde SRA
 
-- nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) # Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
+```
+- nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
+!# Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
 - bash download.sh # Ejecuta el script download.sh que descargara y validara las secuencias de la biomuestra SRR2006763
 - ls -l -h # Revisa los contenidos del directorio SRA_samples.
 - nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh) # Carga a Nano con el script fdump, ingresar los comandos indicados, guardar y cerrar.
 - bash fdump.sh # El script fdump Permite obtener los archivos fastq de la biomuestra SRR2006763
+```
 
 ### Al finalizar resultara lo siguiente:  
 
