@@ -26,7 +26,7 @@
 
 ```
 - nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
-!# Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
+# Carga Nano con el script donwload, ingresar los comandos indicados, guardar y cerrar.
 - bash download.sh # Ejecuta el script download.sh que descargara y validara las secuencias de la biomuestra SRR2006763
 - ls -l -h # Revisa los contenidos del directorio SRA_samples.
 - nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh) # Carga a Nano con el script fdump, ingresar los comandos indicados, guardar y cerrar.
