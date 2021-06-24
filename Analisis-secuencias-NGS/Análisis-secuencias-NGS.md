@@ -30,17 +30,19 @@ cd SRA_samples
 ```
 
 ## Descarga de la biomuestra desde SRA
+[download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
+[fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)
 
 ```
 # Se cargó Nano con el script donwload, ingresando los comandos indicados, guardar y cerrar.
-nano [download.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/download.sh) 
+nano download.sh
 # Se ejecutó el script download.sh que descargara y validara las secuencias de la biomuestra SRR2006763
 bash download.sh 
 
 # Revisa los contenidos del directorio SRA_samples.
 ls -l -h 
 # Se cargó a Nano con el script fdump, ingresando los comandos indicados, guardar y cerrar.
-nano [fdump.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fdump.sh)
+nano fdump.sh
 # El script fdump Permite obtener los archivos fastq de la biomuestra SRR2006763
 bash fdump.sh 
 ```
@@ -68,10 +70,11 @@ md5sum -c md5_samples
 ```
 
 ## Análisis del control de calidad
+[fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) 
 
 ```
 # Se cargó a Nano con el script fastqc, ingresando los comandos indicados, guardar, cerrar y ejecutar. 
-nano [fastqc.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/fastqc.sh) 
+nano fastqc.sh
 bash fastqc.sh
 ```
 
@@ -86,10 +89,11 @@ Desde ahí se pueden ver todos los archivos utilizados y los reportes obtenidos 
 ![fastqc](https://user-images.githubusercontent.com/80927233/121597512-cf3a7600-ca0e-11eb-8c0f-803c4dab20d1.png)
 
 ## Filtrado y poda
+![trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
 
 ```
 # Se cargó a Nano con el script trimm, ingresando los comandos indicados, guardar y cerrar.
-nano [trimm.sh](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/SCRIPT/trimm.sh) 
+nano trimm.sh
 # Este script poda a las secuencias con un tamaño menor a 60bp y entrega los archivos filtrados.
 bash trimm.sh 
 
