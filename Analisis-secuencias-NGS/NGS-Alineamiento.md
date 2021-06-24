@@ -44,5 +44,8 @@ mv /home2/"**USUARIO**"/SRA_samples/SRR2006763/SRR2006763_2.fastq /home2/"**USUA
 ls
 ```
 
-Se descargo el genoma mitocondrial de *Salmo salar* desde [NCBI](https://www.ncbi.nlm.nih.gov/genome/?term=salmo+salar)
-como indica la siguiente imagen
+- Se descargo el genoma mitocondrial de referencia proveniente de *Salmo salar* desde [NCBI](https://www.ncbi.nlm.nih.gov/genome/?term=salmo+salar) en formato [Fasta](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Fasta/mt.fasta)
+- Se cargo el archivo de texto obtenido al directorio "alineamiento" mediante la aplicación WinSCP ingresando al servidor con los datos indicados en la imagen:
+
+![Winscp](https://user-images.githubusercontent.com/80927233/123209976-5ff16700-d48f-11eb-9183-9e165dc07b4f.png)
+
