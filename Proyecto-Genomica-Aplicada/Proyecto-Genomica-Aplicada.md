@@ -43,7 +43,7 @@ La secuencia GRCz11 está compuesta por una secuencia genómica, principalmente 
   |Número total de cromosomas y plásmidos|25|
   |Número de secuencias componentes (WGS o clone)|31,634|
 
-## **Bioproyecto SRA**  
+## **BioProyecto SRA**  
 
 ### SRX6747970: GSM4041277: MPs200vm.3  
 
