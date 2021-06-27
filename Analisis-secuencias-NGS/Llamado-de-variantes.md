@@ -39,8 +39,8 @@ Wget https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/8030/100/GCF_0
 samtools faidx ref_genome.fna
 ```
 
-## Exploración del genoma de referencia
-[Controles "less"](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation)  
+## Exploración del genoma de referencia  
+[Controles "less"](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation)   
 
 ```
 # Con el comando "less" se puede explorar el genoma de referencia y su indice generado con SamTools.
@@ -76,10 +76,10 @@ samtools index SSRR2006763_sorted_RG.bam
 # Finalmente se utilizó el comando HaplotypeCaller del software GATK para obtener el archivo raw_variants.vcf
 gatk HaplotypeCaller -R ref_genome.fna -I SSRR2006763_sorted_RG.bam -O raw_variants.vcf
 ```
-- Notar que este proceso demora aproximadamente 54 minutos, debido a que se están comparando las variantes ingresadas con el genoma de referencia para llamar a los haplotipos del genoma en estudio, el numero indicado entre el nombre del contig y la localización de la variante en bp, corresponde al tiempo transcurrido en minutos, ej: 53.8
-
-[raw_variants.vcf](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf)
-[raw_variants.vcf.idx](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf.idx)
+- Notar que este proceso demora aproximadamente 54 minutos, debido a que se están comparando las variantes ingresadas con el genoma de referencia para llamar a los haplotipos del genoma en estudio, el numero indicado entre el nombre del contig y la localización de la variante en bp, corresponde al tiempo transcurrido en minutos, ej: 53.8  
+  
+[raw_variants.vcf](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf)  
+[raw_variants.vcf.idx](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf.idx)  
 
 ```
 # Al terminar se obtuvieron los archivos raw_variants.vcf y raw_variants.vcf.idx
@@ -102,8 +102,9 @@ grep "##INFO" raw_variants.vcf
 grep "##FORMAT" raw_variants.vcf
 ```
 
-- Para finalizar se realizó una extracción de las variantes con alta calidad, la cual está determinada por el número de reads que presenta cada una, para esto se utilizó un comando en formato pipeline para extraer las variantes que presentaran calidad sobre 100 (en la columna 6), imprimiendo el resultado en el archivo hq_variant.txt
-[hq_variant.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq_variant.txt)
+- Para finalizar se realizó una extracción de las variantes con alta calidad, la cual está determinada por el número de reads que presenta cada una, para esto se utilizó un comando en formato pipeline para extraer las variantes que presentaran calidad sobre 100 (en la columna 6), imprimiendo el resultado en el archivo hq_variant.txt  
+  
+[hq_variant.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq_variant.txt)  
 
 ```
 grep -v "#" raw_variants.vcf | awk '{if ($6 > 100 ) print }' > hq_variant.txt
@@ -113,9 +114,10 @@ grep "NW_" -c -v hq_variant.txt
 # Obteniendo 1736 contigs mapeados y 10669 sin mapear.
 ```
 
-## Análisis de variantes con vcftools
-[hq.freqs.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq.freqs.txt)
-[Resumen VCFtools](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/out.log)
+## Análisis de variantes con vcftools  
+  
+[hq.freqs.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq.freqs.txt)  
+[Resumen VCFtools](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/out.log)  
 
 ```
 # Se contaron los individuos y variantes en el archivo raw_variants.vcf obteniendo 1 individuo y 57820 variantes.
@@ -134,6 +136,6 @@ vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indels
 vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indels
 ```
 
-## Visualización de variantes con IGV
+## Visualización de variantes con IGV  
 
 ![IGV variante](https://user-images.githubusercontent.com/80927233/123532587-822bf480-d6dc-11eb-8794-eca7e2933c32.jpg)
