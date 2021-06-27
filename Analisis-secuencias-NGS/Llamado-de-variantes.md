@@ -122,7 +122,8 @@ grep "NW_" -c -v hq_variant.txt
 vcftools --vcf raw_variants.vcf
 # Se determinaron las frecuencias de todos los alelos, obteniendo el archivo hq.freqs.txt
 vcftools --vcf raw_variants.vcf --freq -c > hq.freqs.txt
-# Es posible filtrar los datos entregados en vcftools por algún cromosoma particular incluyendo el argumento –chr, o podemos excluir el genoma mitocondrial con –not-chr
+# Es posible filtrar los datos entregados en vcftools por algún cromosoma particular incluyendo el argumento –chr
+# o podemos excluir el genoma mitocondrial con –not-chr
 vcftools --vcf raw_variants.vcf --chr NC_027300.1
 vcftools --vcf raw_variants.vcf --not-chr NC_001960.1
 # el argumento --freq entrega la frecuencia de las variantes en el cromosoma analizado.
