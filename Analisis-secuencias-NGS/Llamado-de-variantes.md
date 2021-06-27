@@ -17,7 +17,7 @@ conda config --add channels bioconda
 # Se instaló el software gatk4.
 conda install -c bioconda gatk4
 # gatk4 tiene un tamaño de 277 MB aproximadamente, esto demoró su instalación en aproximadamente 3 minutos.
-# Se utilizó el software vcftools, previamente instalado y utilizado en prácticas anteriores.
+# Se utilizó el software VCFtools, previamente instalado y utilizado en prácticas anteriores.
 conda install -c bioconda vcftools
 ```
 
@@ -65,7 +65,6 @@ grep -c 'NW_' ref_genome.fna.fai
 ```
 
 ## Llamado de variantes
-[ref_genome.dict](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/)
 
 ```
 # Posteriormente se ejecutó el programa Picard para crear el diccionario de secuencias, Obteniendo el archivo ref_genome.dict
@@ -79,8 +78,8 @@ gatk HaplotypeCaller -R ref_genome.fna -I SSRR2006763_sorted_RG.bam -O raw_varia
 ```
 - Notar que este proceso demora aproximadamente 54 minutos, debido a que se están comparando las variantes ingresadas con el genoma de referencia para llamar a los haplotipos del genoma en estudio, el numero indicado entre el nombre del contig y la localización de la variante en bp, corresponde al tiempo transcurrido en minutos, ej: 53.8
 
-[raw_variants.vcf]()
-[raw_variants.vcf.idx]()
+[raw_variants.vcf](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf)
+[raw_variants.vcf.idx](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/raw_variants.vcf.idx)
 
 ```
 # Al terminar se obtuvieron los archivos raw_variants.vcf y raw_variants.vcf.idx
@@ -104,7 +103,7 @@ grep "##FORMAT" raw_variants.vcf
 ```
 
 - Para finalizar se realizó una extracción de las variantes con alta calidad, la cual está determinada por el número de reads que presenta cada una, para esto se utilizó un comando en formato pipeline para extraer las variantes que presentaran calidad sobre 100 (en la columna 6), imprimiendo el resultado en el archivo hq_variant.txt
-[hq_variant.txt]()
+[hq_variant.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq_variant.txt)
 
 ```
 grep -v "#" raw_variants.vcf | awk '{if ($6 > 100 ) print }' > hq_variant.txt
@@ -115,7 +114,8 @@ grep "NW_" -c -v hq_variant.txt
 ```
 
 ## Análisis de variantes con vcftools
-[hq.freqs.txt]()
+[hq.freqs.txt](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/hq.freqs.txt)
+[Resumen VCFtools](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Analisis-variantes/out.log)
 
 ```
 # Se contaron los individuos y variantes en el archivo raw_variants.vcf obteniendo 1 individuo y 57820 variantes.
@@ -133,5 +133,6 @@ vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --keep-only-indels
 vcftools --vcf raw_variants.vcf --freq -c --chr NC_027300.1 --remove-indels
 ```
 
+## Visualización de variantes con IGV
 
-
+![IGV variante](https://user-images.githubusercontent.com/80927233/123532587-822bf480-d6dc-11eb-8794-eca7e2933c32.jpg)
