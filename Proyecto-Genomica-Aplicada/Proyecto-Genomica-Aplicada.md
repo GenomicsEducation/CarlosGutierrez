@@ -11,7 +11,7 @@
 
 https://www.ncbi.nlm.nih.gov/assembly/GCF_000002035.6
 
-- Organismo: Danio rerio (zebrafish)
+- Organismo: *Danio rerio* (zebrafish)
 - Nombre infraespecífico: Raza: Tuebingen
 - Muestra biológica: SAMN06930106
 - Projecto biológico: PRJNA11776
@@ -52,7 +52,7 @@ https://www.ncbi.nlm.nih.gov/sra/SRX6747970[accn]
 - Remitido por: NCBI (GEO)  
 - Estudio: rDNA 16S Análisis de secuenciación por amplicones del intestino de pez cebra expuesto a microplásticos de poliestireno  
 - Muestra: MPs200vm.3  
-- Organismo: Danio rerio  
+- Organismo: *Danio rerio*  
 - Método: 1 ION_TORRENT (Ion S5 XL)  
 - Ejecución: 52,087 puntos, 21,5M bases, 16.5Mb  
 
