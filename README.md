@@ -5,7 +5,7 @@
 - Chileno
 - Magíster en Biotecnología
 
-## Práctica elaboración de un Proyecto de Genómica Aplicada y BioProyecto SRA.
+## Resumen de un Proyecto de Genómica Aplicada y un BioProyecto SRA.
 ### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Proyecto-Genomica-Aplicada/Proyecto-Genomica-Aplicada.md)
 
 ## Práctica Introducción a Linux para genómica
