@@ -1,0 +1,125 @@
+
+426 variants loaded from .bim file.
+5 samples (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.Thinned.nosex .
+--thin: 421 variants removed (5 remaining).
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+5 variants and 5 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to EU_OC_US.Thinned.bed + EU_OC_US.Thinned.bim +
+EU_OC_US.Thinned.fam ... done.
+
+Random seed: 43
+Point estimation method: Block relaxation algorithm
+Convergence acceleration algorithm: QuasiNewton, 3 secant conditions
+Point estimation will terminate when objective function delta < 0.0001
+Estimation of standard errors disabled; will compute point estimates only.
+Size of G: 5x5
+Performing five EM steps to prime main algorithm
+1 (EM)  Elapsed: 0      Loglikelihood: -34.2666 (delta): 5.58043
+2 (EM)  Elapsed: 0      Loglikelihood: -32.3931 (delta): 1.87351
+3 (EM)  Elapsed: 0      Loglikelihood: -31.1566 (delta): 1.23655
+4 (EM)  Elapsed: 0      Loglikelihood: -30.2226 (delta): 0.933948
+5 (EM)  Elapsed: 0      Loglikelihood: -29.5336 (delta): 0.689039
+Initial loglikelihood: -29.5336
+Starting main algorithm
+1 (QN/Block)    Elapsed: 0      Loglikelihood: -28.5354 (delta): 0.998236
+2 (QN/Block)    Elapsed: 0      Loglikelihood: -28.5181 (delta): 0.0172696
+3 (QN/Block)    Elapsed: 0      Loglikelihood: -28.502  (delta): 0.0161174
+4 (QN/Block)    Elapsed: 0      Loglikelihood: -28.2695 (delta): 0.232453
+5 (QN/Block)    Elapsed: 0      Loglikelihood: -27.4952 (delta): 0.77434
+6 (QN/Block)    Elapsed: 0      Loglikelihood: -27.3333 (delta): 0.161901
+7 (QN/Block)    Elapsed: 0      Loglikelihood: -27.236  (delta): 0.0972489
+8 (QN/Block)    Elapsed: 0      Loglikelihood: -27.1244 (delta): 0.111624
+9 (QN/Block)    Elapsed: 0      Loglikelihood: -27.1185 (delta): 0.00589325
+10 (QN/Block)   Elapsed: 0      Loglikelihood: -27.1185 (delta): 4.52198e-05
+Summary:
+Converged in 10 iterations (0.002 sec)
+Loglikelihood: -27.118458
+Fst divergences between estimated populations:
+        Pop0
+Pop0
+Pop1    0.500
+Writing output files.
+
+Random seed: 43
+Point estimation method: Block relaxation algorithm
+Convergence acceleration algorithm: QuasiNewton, 3 secant conditions
+Point estimation will terminate when objective function delta < 0.0001
+Estimation of standard errors disabled; will compute point estimates only.
+Size of G: 5x5
+Performing five EM steps to prime main algorithm
+1 (EM)  Elapsed: 0      Loglikelihood: -32.8038 (delta): 5.94921
+2 (EM)  Elapsed: 0      Loglikelihood: -30.9082 (delta): 1.89566
+3 (EM)  Elapsed: 0      Loglikelihood: -29.597  (delta): 1.31115
+4 (EM)  Elapsed: 0      Loglikelihood: -28.5942 (delta): 1.00277
+5 (EM)  Elapsed: 0      Loglikelihood: -27.7473 (delta): 0.846957
+Initial loglikelihood: -27.7473
+Starting main algorithm
+1 (QN/Block)    Elapsed: 0      Loglikelihood: -23.2989 (delta): 4.44836
+2 (QN/Block)    Elapsed: 0      Loglikelihood: -22.4697 (delta): 0.82919
+3 (QN/Block)    Elapsed: 0      Loglikelihood: -21.9846 (delta): 0.48508
+4 (QN/Block)    Elapsed: 0      Loglikelihood: -21.9322 (delta): 0.0524428
+5 (QN/Block)    Elapsed: 0      Loglikelihood: -21.931  (delta): 0.00121987
+6 (QN/Block)    Elapsed: 0      Loglikelihood: -21.931  (delta): 8.24264e-06
+Summary:
+Converged in 6 iterations (0.002 sec)
+Loglikelihood: -21.930977
+Fst divergences between estimated populations:
+        Pop0    Pop1    Pop2
+Pop0
+Pop1    0.523
+Pop2    0.378   0.511
+Pop3    0.507   0.481   0.392
+Writing output files.
+
+Size of G: 5x5
+Performing five EM steps to prime main algorithm
+1 (EM)  Elapsed: 0      Loglikelihood: -32.6366 (delta): 3.41581
+2 (EM)  Elapsed: 0      Loglikelihood: -30.4463 (delta): 2.19029
+3 (EM)  Elapsed: 0      Loglikelihood: -28.6045 (delta): 1.84183
+4 (EM)  Elapsed: 0      Loglikelihood: -27.1435 (delta): 1.46096
+5 (EM)  Elapsed: 0      Loglikelihood: -25.9966 (delta): 1.1469
+Initial loglikelihood: -25.9966
+Starting main algorithm
+1 (QN/Block)    Elapsed: 0      Loglikelihood: -22.1913 (delta): 3.8053
+2 (QN/Block)    Elapsed: 0      Loglikelihood: -21.628  (delta): 0.563377
+3 (QN/Block)    Elapsed: 0      Loglikelihood: -20.9933 (delta): 0.634658
+4 (QN/Block)    Elapsed: 0      Loglikelihood: -20.9785 (delta): 0.0147889
+5 (QN/Block)    Elapsed: 0      Loglikelihood: -20.9785 (delta): 1.29678e-08
+Summary:
+Converged in 5 iterations (0.002 sec)
+Loglikelihood: -20.978516
+Fst divergences between estimated populations:
+        Pop0    Pop1    Pop2    Pop3
+Pop0
+Pop1    0.500
+Pop2    0.591   0.455
+Pop3    0.735   0.500   0.714
+Pop4    0.478   0.505   0.484   0.652
+Writing output files.
+
+Size of G: 5x5
+Performing five EM steps to prime main algorithm
+1 (EM)  Elapsed: 0      Loglikelihood: -32.3774 (delta): 3.59174
+2 (EM)  Elapsed: 0      Loglikelihood: -30.5082 (delta): 1.86918
+3 (EM)  Elapsed: 0      Loglikelihood: -28.7674 (delta): 1.74082
+4 (EM)  Elapsed: 0      Loglikelihood: -27.264  (delta): 1.50344
+5 (EM)  Elapsed: 0      Loglikelihood: -26.0053 (delta): 1.25873
+Initial loglikelihood: -26.0053
+Starting main algorithm
+1 (QN/Block)    Elapsed: 0      Loglikelihood: -23.1407 (delta): 2.86456
+2 (QN/Block)    Elapsed: 0      Loglikelihood: -23.1407 (delta): 2.85573e-07
+Summary:
+Converged in 2 iterations (0 sec)
+Loglikelihood: -23.140702
+Fst divergences between estimated populations:
+        Pop0    Pop1    Pop2    Pop3    Pop4
+Pop0
+Pop1    0.304
+Pop2    0.272   0.588
+Pop3    0.494   0.727   0.612
+Pop4    0.275   0.363   0.519   0.535
+Pop5    0.399   0.412   0.509   0.603   0.481
