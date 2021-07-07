@@ -142,5 +142,7 @@ K6 <- read_delim("EU_OC_US.Thinned.6.Q", delim = " ", col_names = F)
 Hplot <- admixtureplot(str_out = K6,k = 6, pops = pops, xaxis = T)
 Hplot
 
+top_row <- plot_grid(Eplot,Gplot,labels = "AUTO")
+plot_grid(top_row,Hplot,nrow = 2,labels = c("","C"))
 ```
 
