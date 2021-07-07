@@ -1,7 +1,46 @@
----
-title: "Genómica Poblacional"
-output: html_document
----
+# Introducción a la genómica poblacional y ancestría
+
+## **Autor**
+### Carlos Gutierrez Ferreira  
+- Chileno
+- Magíster en Biotecnología
+
+## Conexión al servidor Pomeo  
+
+![PUTTY3](https://user-images.githubusercontent.com/80927233/119919416-67792b00-bf38-11eb-8e85-ffe2a8c69777.jpg)
+
+## Configuración de bioconda e instalación de software  
+
+```
+# Se configuró el canal de Bioconda para su uso.
+conda config --add channels bioconda
+# Se instaló el software plink.
+conda install -c bioconda plink
+# Se instaló el software admixture
+conda install -c bioconda admixture
+```
+
+## Creación del directorio de trabajo “population” y preparación de los archivos para el análisis poblacional con plink y admixture  
+
+[EU_OC_US.vcf](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/EU_OC_US.vcf)  
+[Admixture_plot.R](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Admixture_plot.R)  
+
+```
+# Se creó la carpeta "population" para agregar los archivos "EU_OC_US.vcf" y "Admixture_plot.R".
+mkdir population
+cd population
+# Se copiaron los archivos "EU_OC_US.vcf" y "Admixture_plot.R" mediante WinSCP y se reviso el contenido de la carpeta.
+ls -l -h
+
+```
+
+- ### El archivo [EU_OC_US.vcf](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/EU_OC_US.vcf) contiene las muestras provenientes de tres poblaciones de salmon del Atlantico (Salmo salar).
+
+- Europa: 2_WG0341511-DNA_A02_5408, 3_WG0341511-DNA_A03_5416, 5_WG0341511-DNA_A05_5450.
+
+- Oceania: FR07958834, FR07958842, FR07958850.
+
+- Norteamerica: GNB12-1, GNB12-10, GNB12-11.
 
 ```{r setup}
 
