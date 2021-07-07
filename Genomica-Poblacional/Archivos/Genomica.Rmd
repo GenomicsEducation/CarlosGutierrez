@@ -110,9 +110,9 @@ plot_grid(top_row,Cplot,nrow = 2,labels = c("","C"))
 
 ```{r}
 
-pca1 <- read_delim("EU_OC_US.FilteredPrunedUnrel.eigenvec", delim = " ",col_names = F) %>% head(pca1)
+pca1 <- read_delim("EU_OC_US.FilteredPrunedUnrel.eigenvec", delim = " ",col_names = F)
 
-colnames(pca1) <- c("Population","Individual",paste0("PC",c(1:4))) %>% head(pca1)
+colnames(pca1) <- c("Population","Individual",paste0("PC",c(1:4)))
 
 mycols <- c("#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6")
 
