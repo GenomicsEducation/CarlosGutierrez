@@ -8,7 +8,7 @@
 ## Resumen de un Proyecto de Genómica Aplicada y un BioProyecto SRA.
 ### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Proyecto-Genomica-Aplicada/Proyecto-Genomica-Aplicada.md)
 
-## Práctica Introducción a Linux para genómica
+## Introducción a Linux para genómica
 ### [Descripción de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Linux-Genomica/Linux-Genómica.md)
 
 ## Análisis de secuencias NGS
