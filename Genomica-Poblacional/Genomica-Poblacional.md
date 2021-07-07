@@ -77,7 +77,7 @@ vcftools --vcf EU_OC_US.vcf --geno-r2 --chr 1 --ld-window-bp 100000 --min-r2 0.0
 vcftools --vcf EU_OC_US.vcf --geno-r2 --chr 1 --ld-window-bp 100000 --min-r2 0.001 --indv GNB12-1 --indv GNB12-10 --indv GNB12-11 --out US
 
 ```
-- Mientras más cercano a 1 es el valor R^2 del desequilibrio de ligamiento menores son las probabilidades de que ambos genes, evaluados mediante LD, segreguen de forma independiente.  
+- Mientras más cercano a 1 es el valor R^2 del desequilibrio de ligamiento, menores son las probabilidades de que ambos genes, evaluados mediante LD, segreguen de forma independiente.  
 - Cada uno de estos comandos filtró parte de los datos según las ventanas indicadas, con el objetivo de estandarizar las muestras poblacionales, obteniendo a su vez, un [texto de salida](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Archivos/Output.txt) después de cada comando.  
 
 ## Análisis de los datos en RStudio.
