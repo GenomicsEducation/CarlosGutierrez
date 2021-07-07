@@ -1,0 +1,146 @@
+---
+title: "Genómica Poblacional"
+output: html_document
+---
+
+```{r setup}
+
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+```
+
+```{r}
+
+EU <- read_delim("EU.geno.ld", delim = "\t")
+OC <- read_delim("OC.geno.ld", delim = "\t")
+US <- read_delim("US.geno.ld", delim = "\t")
+
+EU$dist <- ceiling((EU$POS2 - EU$POS1)/1000)*1000
+OC$dist <- ceiling((OC$POS2 - OC$POS1)/1000)*1000
+US$dist <- ceiling((US$POS2 - US$POS1)/1000)*1000
+
+EU2 <- group_by(EU,dist) %>% summarise(meanR2 = mean(`R^2`))
+
+OC2 <- group_by(OC,dist) %>% summarise(meanR2 = mean(`R^2`))
+
+US2 <- group_by(US,dist) %>% summarise(meanR2 = mean(`R^2`))  
+
+dd <- bind_rows(EU2,OC2,US2)
+
+dd$pop <- rep(c("EU","OC","US"),c(nrow(EU2),nrow(OC2),nrow(US2))) 
+
+write_csv(dd,"EU_OC_US.windowed.ld.csv")
+
+```
+
+### Heterocigosidad individual
+
+```{r}
+
+het <- read_delim("EU_OC_US.het",delim = "\t")
+het
+
+het$Heterozygosity <- 1-(het$`O(HOM)`/het$N_SITES) 
+het$Population <- c(rep("EU",3),rep("OC",3),rep("US",3))
+Aplot <- ggplot(het,aes(x = Population, y = Heterozygosity, col = Population)) +
+  geom_point()+
+  theme_bw()+
+  theme(legend.position = "none")+
+  xlab("")
+Aplot
+
+```
+
+```{r}
+
+pi_EU <- read_delim("EU.windowed.pi",delim = "\t")
+pi_EU
+
+pi_OC <- read_delim("OC.windowed.pi",delim = "\t")
+pi_OC
+
+pi_US <- read_delim("US.windowed.pi",delim = "\t")
+pi_US
+
+```
+
+```{r}
+
+pi_all <- bind_rows(pi_EU,pi_OC,pi_US)
+pi_all$Population<-c(rep("EU",nrow(pi_EU)),rep("OC",nrow(pi_OC)),rep("US",nrow(pi_US)))
+
+Bplot <- ggplot(pi_all,aes(x = Population, y = PI, col = Population))+
+      geom_jitter(col = "grey",width = 0.1)+ 
+      geom_boxplot(notch = T, alpha = 0,outlier.shape = NA)+ 
+      theme_bw()+
+      theme(legend.position = "none")+
+      xlab("")+
+      ylab(expression(pi))
+Bplot
+
+```
+
+```{r}
+
+ld <- read_csv("EU_OC_US.windowed.ld.csv")
+ld
+
+Cplot <- ggplot(ld,aes(x = dist/1000, y = meanR2, col = pop)) +
+      geom_point()+
+      geom_line()+
+      theme_bw()+
+      xlab("Distance (kb)")+
+      ylab(expression(R^2))+
+      scale_colour_discrete(name = "Population")
+Cplot
+
+```
+
+```{r}
+
+top_row <- plot_grid(Aplot,Bplot,labels = "AUTO")
+plot_grid(top_row,Cplot,nrow = 2,labels = c("","C"))
+
+```
+
+
+
+```{r}
+
+pca1 <- read_delim("EU_OC_US.FilteredPrunedUnrel.eigenvec", delim = " ",col_names = F) %>% head(pca1)
+
+colnames(pca1) <- c("Population","Individual",paste0("PC",c(1:4))) %>% head(pca1)
+
+mycols <- c("#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6")
+
+Dplot <- ggplot(pca1,aes(x = PC1,y = PC2,col = Population))+
+      geom_point()+
+      theme_bw()+
+      scale_colour_manual(values = mycols)
+Dplot
+
+```
+
+```{r}
+
+source("Admixture_plot.R")
+
+pops <- read_delim("EU_OC_US.Thinned.fam", delim = " ",col_names = F)
+
+K2 <- read_delim("EU_OC_US.Thinned.2.Q", delim = " ",col_names = F)
+Eplot <- admixtureplot(str_out = K2,k = 2, pops = pops, xaxis = F)
+Eplot
+
+K4 <- read_delim("EU_OC_US.Thinned.4.Q", delim = " ", col_names = F)
+Gplot <- admixtureplot(str_out = K4,k = 4, pops = pops, xaxis = F)
+Gplot
+
+K6 <- read_delim("EU_OC_US.Thinned.6.Q", delim = " ", col_names = F)
+Hplot <- admixtureplot(str_out = K6,k = 6, pops = pops, xaxis = T)
+Hplot
+
+```
+
