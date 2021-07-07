@@ -1,0 +1,140 @@
+
+--vcf: EU_OC_US-temporary.bed + EU_OC_US-temporary.bim + EU_OC_US-temporary.fam
+written.
+21446 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.750044.
+21446 variants and 9 samples pass filters and QC.
+Note: No phenotypes present.
+
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (21446 variants, 9 samples).
+--file: EU_OC_US-temporary.bed + EU_OC_US-temporary.bim +
+EU_OC_US-temporary.fam written.
+21446 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.750044.
+21446 variants and 9 samples pass filters and QC.
+Note: No phenotypes present.
+
+21446 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.Filtered.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.750044.
+Warning: --hwe observation counts vary by more than 10%.  Consider using
+--geno, and/or applying different p-value thresholds to distinct subsets of
+your data.
+--hwe: 1386 variants removed due to Hardy-Weinberg exact test.
+4776 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+15284 variants and 9 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to EU_OC_US.Filtered.bed + EU_OC_US.Filtered.bim +
+EU_OC_US.Filtered.fam ... done.
+
+15284 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.Filtered.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.827299.
+15284 variants and 9 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to EU_OC_US.Filtered.bed + EU_OC_US.Filtered.bim +
+EU_OC_US.Filtered.fam ... done.
+Pruned 1045 variants from chromosome 1, leaving 28.
+Pruned 322 variants from chromosome 2, leaving 10.
+Pruned 542 variants from chromosome 3, leaving 17.
+Pruned 661 variants from chromosome 4, leaving 23.
+Pruned 660 variants from chromosome 5, leaving 21.
+Pruned 615 variants from chromosome 6, leaving 18.
+Pruned 500 variants from chromosome 7, leaving 11.
+Pruned 159 variants from chromosome 8, leaving 3.
+Pruned 752 variants from chromosome 9, leaving 21.
+Pruned 802 variants from chromosome 10, leaving 24.
+Pruned 694 variants from chromosome 11, leaving 16.
+Pruned 658 variants from chromosome 12, leaving 20.
+Pruned 675 variants from chromosome 13, leaving 17.
+Pruned 587 variants from chromosome 14, leaving 18.
+Pruned 593 variants from chromosome 15, leaving 15.
+Pruned 563 variants from chromosome 16, leaving 13.
+Pruned 267 variants from chromosome 17, leaving 11.
+Pruned 460 variants from chromosome 18, leaving 12.
+Pruned 610 variants from chromosome 19, leaving 18.
+Pruned 695 variants from chromosome 20, leaving 18.
+Pruned 301 variants from chromosome 21, leaving 7.
+Pruned 481 variants from chromosome 22, leaving 15.
+Pruned 357 variants from chromosome 23, leaving 10.
+Pruned 314 variants from chromosome 24, leaving 9.
+Pruned 350 variants from chromosome 25, leaving 11.
+Pruned 266 variants from chromosome 26, leaving 10.
+Pruned 439 variants from chromosome 27, leaving 10.
+Pruned 226 variants from chromosome 28, leaving 7.
+Pruned 264 variants from chromosome 29, leaving 13.
+Pruning complete.  14858 of 15284 variants removed.
+Marker lists written to EU_OC_US.Filtered.prune.in and
+EU_OC_US.Filtered.prune.out .
+
+15284 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.FilteredPruned.nosex .
+--extract: 426 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.907407.
+426 variants and 9 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to EU_OC_US.FilteredPruned.bed + EU_OC_US.FilteredPruned.bim +
+EU_OC_US.FilteredPruned.fam ... done.
+
+426 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.FilteredPruned.nosex .
+Using up to 11 threads (change this with --threads).
+Before main variant filters, 9 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.907407.
+426 variants and 9 samples pass filters and QC (before --rel-cutoff).
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+4 samples excluded by --rel-cutoff.
+Remaining sample IDs written to EU_OC_US.FilteredPruned.rel.id .
+
+426 variants loaded from .bim file.
+9 samples (0 males, 0 females, 9 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.FilteredPrunedUnrel.nosex .
+--keep: 5 samples remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.944601.
+426 variants and 5 samples pass filters and QC.
+Note: No phenotypes present.
+--make-bed to EU_OC_US.FilteredPrunedUnrel.bed +
+EU_OC_US.FilteredPrunedUnrel.bim + EU_OC_US.FilteredPrunedUnrel.fam ... done.
+
+426 variants loaded from .bim file.
+5 samples (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to EU_OC_US.FilteredPrunedUnrel.nosex .
+Using up to 11 threads (change this with --threads).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.944601.
+426 variants and 5 samples pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to EU_OC_US.FilteredPrunedUnrel.eigenval and
+EU_OC_US.FilteredPrunedUnrel.eigenvec .
