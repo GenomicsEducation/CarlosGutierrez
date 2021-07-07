@@ -22,4 +22,4 @@
 ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Llamado-de-variantes.md)
 
 ## Introducción a genómica poblacional y ancestría
-### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Genomica-Poblacional.md.md)
+### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Genomica-Poblacional.md)
