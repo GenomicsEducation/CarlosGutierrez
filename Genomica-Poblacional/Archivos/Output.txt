@@ -1,0 +1,35 @@
+
+After filtering, kept 9 out of 9 Individuals
+Outputting Individual Heterozygosity
+        Individual Heterozygosity: Only using biallelic SNPs.
+After filtering, kept 21446 out of a possible 21446 Sites
+
+After filtering, kept 9 out of 9 Individuals
+Outputting HWE statistics (but only for biallelic loci)
+        HWE: Only using biallelic SNPs.
+After filtering, kept 21446 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Windowed Nucleotide Diversity Statistics...
+After filtering, kept 21446 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Windowed Nucleotide Diversity Statistics...
+After filtering, kept 21446 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Windowed Nucleotide Diversity Statistics...
+After filtering, kept 21446 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Pairwise LD (bi-allelic only)
+After filtering, kept 1158 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Pairwise LD (bi-allelic only)
+After filtering, kept 1158 out of a possible 21446 Sites
+
+After filtering, kept 3 out of 9 Individuals
+Outputting Pairwise LD (bi-allelic only)
+After filtering, kept 1158 out of a possible 21446 Sites
+
