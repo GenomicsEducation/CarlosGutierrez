@@ -241,7 +241,7 @@ Dplot
 
 - Gráfico 2: Análisis de los componentes principales (PCA) de los datos filtrados y podados desde la población.  
 
-## Análisis mediante admixture
+## Análisis mediante admixture (PuTTY).
 
 ```
 # Se seleccionaron al azar el 1% de los marcadores presentes en la muestra filtrada y podada de los individuos no relacionados.
@@ -258,7 +258,7 @@ done
 - Admixture generó 2 archivos: Los archivos .Q que contienen asignaciones de grupos para cada individuo y los archivos .P que contienen las frecuencias alélicas de la población para cada SNP.
 - [Texto de salida](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Archivos/Output3.txt) obtenido posterior a los comandos.
 
-### Graficos generados por Admixture para 2, 4 y 6 poblaciones.
+### Graficos generados por Admixture para 2, 4 y 6 poblaciones (RStudio.Cloud).
 
 ```{r}
 
