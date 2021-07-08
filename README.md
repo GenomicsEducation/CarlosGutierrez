@@ -5,6 +5,8 @@
 - Chileno
 - Magíster en Biotecnología
 
+### A continuación, se encuentran todos los desarrollos de las actividades realizadas en servidor Linux.
+
 ## Resumen de un Proyecto de Genómica Aplicada y un BioProyecto SRA.
 ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Proyecto-Genomica-Aplicada/Proyecto-Genomica-Aplicada.md)
 
