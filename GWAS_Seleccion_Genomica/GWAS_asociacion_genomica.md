@@ -7,7 +7,7 @@
 
 ## Conexión y acceso a RStudio Cloud
 
-- Se accedió a la página [RStudio.Cloud](https://rstudio.cloud/projects) para generar el proyecto.
+- Se accedió a la página [RStudio.Cloud](https://rstudio.cloud/projects) para generar el [Proyecto](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/GWAS_Seleccion_Genomica/Archivos/Practica_GWAS_asociacion_genomica.Rmd) en formato RMarkdown.
 
 ## instalación de las librerías y configuración de los trozos de código.
 
@@ -33,16 +33,14 @@ geno<-read.delim("geno.txt",sep="\t",dec=",",header=T)
 pheno<-read.delim("pheno.txt",sep="\t",dec=",",header=T)
 ```
 
-## b) Se exportaron y analizaron los datos.
+### b) Se exportaron y analizaron los datos.
 
 ```{r}
 dim(geno)
 dim(pheno)
 head(geno[1:9,1:9])
 head(pheno)
-
 ```
-
 ```{r}
 hist(pheno$y,main="Histograma del fenotipo",xlab="Fenotipo observado")
 ```
@@ -50,9 +48,9 @@ hist(pheno$y,main="Histograma del fenotipo",xlab="Fenotipo observado")
 - Cada SNP se encuentra codificado como presente (1) o ausente (0) en el genotipo de cada animal.  
 - Los heterocigotos son todos aquellos individuos que se encuentran al rededor del valor 0 en el Histograma del fenotipo, dado que no presentan rasgos homocigotos de ambos alelos.
 
-# Matriz de relación aditiva (A.mat {rrBLUP}) y análisis GWAS.
+## Matriz de relación aditiva (A.mat {rrBLUP}) y análisis GWAS.
 
-## a) Se investigó la función *A.mat* y se calculó la matriz de parentesco genómico para el set de datos *geno*.
+### a) Se investigó la función *A.mat* y se calculó la matriz de parentesco genómico para el set de datos *geno*.
 
 ```{r}
 help(A.mat)
@@ -65,7 +63,7 @@ head(A[1:6,1:6])
 hist(A,main="Histograma de la matriz de relación aditiva")
 ```
 
-## b) Grafica de la diagonal de la matriz.
+### b) Grafica de la diagonal de la matriz.
 
 ```{r}
 endogamia<-diag(A)
@@ -77,7 +75,7 @@ hist(endogamia,main="Histograma de endogamia")
 - Un valor de endogamia sobre 1 (1.1) representa a un coeficiente de consanguinidad positivo en los individuos analizados, con una correlación gamética intraindividual positiva en locus único, utilizado cuando la densidad de marcadores es baja.  
 - Asi mismo, un valor de endogamia bajo 1 (0.9) representa a un coeficiente de consanguinidad negativo.
 
-## c) Se investigó la función *GWAS* y se realizó un análisis de asociación genómica GWAS.
+### c) Se investigó la función *GWAS* y se realizó un análisis de asociación genómica GWAS.
 
 ```{r}
 help(GWAS)
@@ -87,9 +85,9 @@ class(score)
 
 - Al observar la grafica generada por la función *GWAS* se detectaron dos QTLs significativos en el análisis, uno en el cromosoma 3 y otro en el cromosoma 10.
 
-# Efecto de los QTLs detectados en el análisis GWAS.
+## Efecto de los QTLs detectados en el análisis GWAS.
 
-## a) Se exploró el objeto *score* con los comandos *head* y *View*
+### a) Se exploró el objeto *score* con los comandos *head* y *View*
 
 ```{r}
 head(score)
@@ -103,7 +101,7 @@ exp(-7.5047236)
 - Entre ambos, el snp300 presenta el valor de p más alto, con un valor de 5.5x10^-4  
 - Cabe destacar que el analisis GWAS considera por defecto la significancia de los marcadores con un FDR de 0.05 calculado mediante el q-value.
 
-## b) Regresión lineal del fenotipo en función del genotipo para cada SNP significativo.
+### b) Regresión lineal del fenotipo en función del genotipo para cada SNP significativo.
 
 ```{r}
 qtl300<-t(geno[300,4:203])+1
@@ -122,7 +120,7 @@ qtl2<-ggplot(qtls,aes(x=X1000,y=pheno.y))
 qtl2+geom_point()+xlab("snp 1000")+ylab("Pheno")+geom_smooth(method=lm)
 ```
 
-## c) Estimacion del efecto (beta o pendiente) de los QTLs con mayor score.
+### c) Estimacion del efecto (beta o pendiente) de los QTLs con mayor score.
 
 ```{r}
 lm.qtl.300<-lm(pheno.y~X300,data=qtls)
