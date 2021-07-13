@@ -25,3 +25,6 @@
 
 ## Introducción a genómica poblacional y ancestría
 ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Genomica-Poblacional.md)
+
+##  Introducción a los estudios de asociación genómica, GWAS y Selección Genómica.  
+### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/GWAS_Seleccion_Genomica/GWAS_asociacion_genomica.md)
