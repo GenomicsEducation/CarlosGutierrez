@@ -5,7 +5,7 @@
 - Chileno
 - Magíster en Biotecnología
 
-- ## A continuación, se encuentran las descripciones paso a paso de las actividades realizadas en busqueda de proyectos genomicos, servidor Linux y RStudio.
+- ## A continuación, se encuentra la descripción paso a paso de las actividades realizadas en busqueda de proyectos genomicos, servidor Linux y RStudio.
 
 ## Resumen de un Proyecto de Genómica Aplicada y un BioProyecto SRA.
 ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Proyecto-Genomica-Aplicada/Proyecto-Genomica-Aplicada.md)
