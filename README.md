@@ -15,13 +15,13 @@
 
 ## Análisis de secuencias NGS
 - ### Instalación y configuración del software fastqc y trimmomatic junto al análisis de control de calidad, filtrado y poda  
-### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Análisis-secuencias-NGS.md)
+- ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Análisis-secuencias-NGS.md)
 
 - ### Instalación y configuración del software BWA y SamTools junto al Alineamiento de las secuencias
-### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/NGS-Alineamiento.md)
+- ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/NGS-Alineamiento.md)
 
 - ### Instalación y configuración del software gatk4 y VCFtools junto al Llamado de las variantes
-### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Llamado-de-variantes.md)
+- ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Analisis-secuencias-NGS/Llamado-de-variantes.md)
 
 ## Introducción a genómica poblacional y ancestría
 ### [Desarrollo de la actividad](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/Genomica-Poblacional/Genomica-Poblacional.md)
