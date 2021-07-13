@@ -1,4 +1,4 @@
-# Desarrollo del Curso en Genética y Genómica 
+# Desarrollo del Curso: Genética y Genómica en Produccion Animal
 
 ## **Autor**
 ### Carlos Gutierrez Ferreira  
