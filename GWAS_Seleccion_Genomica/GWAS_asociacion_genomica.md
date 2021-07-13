@@ -1,41 +1,36 @@
----
-title: "GWAS y Selección Genómica"
-author: "Carlos Gutiérrez Ferreira"
-date: "`r format(Sys.time(), '%d %B %Y')`"
-output:
-  html_document:
-    toc: true
-    toc_float:
-      collapsed: false
-    code_folding: hide
-  pdf_document: default
-subtitle: Curso de Genética y Genómica en Producción Animal
----
+# GWAS y Selección Genómica  
+
+## **Autor**  
+### Carlos Gutierrez Ferreira  
+- Chileno  
+- Magíster en Biotecnología
+
+## Conexión y acceso a RStudio Cloud
+
+- Se accedió a la página [RStudio.Cloud](https://rstudio.cloud/projects) para generar el proyecto.
+
+## instalación de las librerías y configuración de los trozos de código.
+
+- Se colocaron las siguientes líneas de código para configurar la sesión.
 
 ```{r, echo=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(message = FALSE)
-
 install.packages("rrBLUP")
 install.packages("ggplot2")
-
 ```
-
 ```{r, echo=FALSE}
-
 library(utils)
 library(rrBLUP)
 library(ggplot2)
-
 ```
 
-# Importado y exportado de los archivos correspondientes a genotipos y fenotipos.
+## Importado y exportado de los archivos correspondientes a genotipos y fenotipos.
 
-## a) Se importaron los archivos [*geno*]() y [*pheno*]() al entorno de RStudio.
+### a) Se importaron los archivos [*geno*](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/GWAS_Seleccion_Genomica/Archivos/geno.txt) y [*pheno*](https://github.com/GenomicsEducation/CarlosGutierrez/blob/main/GWAS_Seleccion_Genomica/Archivos/pheno.txt) al entorno de RStudio.
 
 ```{r}
 geno<-read.delim("geno.txt",sep="\t",dec=",",header=T)
 pheno<-read.delim("pheno.txt",sep="\t",dec=",",header=T)
-
 ```
 
 ## b) Se exportaron y analizaron los datos.
@@ -64,7 +59,6 @@ help(A.mat)
 A<-A.mat(geno[4:203]) 
 dim(A)
 head(A[1:6,1:6])
-
 ```
 
 ```{r}
@@ -103,7 +97,6 @@ View(score)
 dplyr::filter(score,y>5)
 exp(-8.508100)
 exp(-7.5047236)
-
 ```
 
 - Tal como se observo en el análisis GWAS, solo se encontraron dos SNPs significativos, correspondientes al snp300 y snp1000 presentes en los cromosomas 3 y 10 respectivamente.  
